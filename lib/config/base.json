@@ -1,0 +1,13 @@
+{
+  "port": 1337,
+  "proxies": [
+    {
+      "pathname": "yelp",
+      "target": "https://api.yelp.com"
+    },
+    {
+      "pathname": "geocode",
+      "target": "https://maps.googleapis.com/maps/api/geocode/json"
+    }
+  ]
+}

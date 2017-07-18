@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Start | MeetPoint</title>
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootswatch.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Google Map -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDX_eXekJVgS9WjggIhZRQbvNXlbFQDsc&libraries=places"></script>
+  <!-- Javascript -->
+  <script type="text/javascript" src="assets/javascript/logic.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div   class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">MeetPoint<img src="assets/images/octopus512.png" alt="MeetPoint Logo"  style="width: 10vw;height: auto;"> </h1>
+      <h3 class="text-center">Contact Us!</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword" class="col-lg-2 control-label">Full Name</label>
+      <div class="col-lg-10">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Alex Smith">
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="textArea" class="col-lg-2 control-label">Message</label>
+      <div class="col-lg-10">
+        <textarea class="form-control" rows="3" id="textArea" placeholder="blah blah blah :)"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-lg-2 control-label">Pick one!</label>
+      <div class="col-lg-10">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+            This is the coolest thing since sliced bread!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            The above message is a recommendation for improvements
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-warning">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="row">
+          <div class="col-md-12">
+            <h3 class="text-center"><a href="profile.html">Back to Profile Page</a></h2>
+          </div>
+        </div>
+  </div>
+</div>
+
+</body>
+</html>

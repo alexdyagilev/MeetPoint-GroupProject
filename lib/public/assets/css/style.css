@@ -1,0 +1,130 @@
+body {
+  background-color: white !important;
+  height:100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#row-1 {
+  margin-top: 13vw;
+}
+
+h1 { 
+  font-size: 8vw;
+}
+
+.start-btn {
+  width: 13vw;
+  height: 5vw;
+  font-size: 2vw;
+  margin: 1vw;
+}
+
+span.group-options {
+  position: absolute;
+  right: 0;
+}
+
+img[class^="group-icon"] {
+  margin: 0 0.4vw;
+}
+
+img[class^="group-icon"]:hover {
+ cursor: pointer;
+}
+
+.group-list-item {
+  font-size: 1.5vw;
+  padding: 1vw;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+li:hover {
+  background: #ffdb99;
+}
+
+.panel-body {
+  padding: 0;
+}
+
+div[id^="info-"] {
+  padding: 1vw;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+
+#groups-heading {
+  font-size: 2vw;
+}
+
+#btn-group-modal {
+  font-size: 1.2vw;
+  background: white;
+  color: orange;
+  border: none;
+  padding: 0.5vw;
+  border-radius: 50px;
+  outline: none;
+}
+
+#btn-group-modal:hover {
+  background: #9975b9;
+  color: white;
+}
+
+.modal-btn {
+  font-size: 1vw;
+  width: 10vw;
+  height: 3vw;
+}
+
+#btn-current-loc {
+  font-size: 0.9vw;
+  line-height: 1vw;
+}
+
+/*/////////////////////////////*/
+
+
+#map {
+  height: 40vw !important;
+}
+
+.boxes {
+  padding: 0px !important;
+  margin-bottom: 0px !important;
+  height: 30vw;
+}
+
+.bus-image {
+  width: 5vw !important;
+  height: auto !important;
+}
+.panel {
+  box-shadow: none;
+}
+
+#group-box {
+  margin-right: 5px !important;
+}
+
+#navigation {
+  margin-bottom: 0px !important;
+}
+
+.btn-expand {
+  background-color: orange;
+  color: white;
+}
+
+#btn-group-modal {
+  position: absolute;
+  right: 1vw;
+}
+
+.panel-heading {
+  height: 60px !important;
+  padding-top: 1vw !important;
+}

@@ -1,0 +1,9 @@
+----------Yelp API----------
+Access token: dansSf9_Muex3BxxaCcbl3S2Up3UnypA
+Sample URL: (Yelp requires pretty heavy authentication, so really the only way to use their API is through this proxy right now.)
+Link to documentation: https://www.yelp.com/developers/documentation/v3/business_search
+
+----------Geocode API----------
+API key: AIzaSyBDX_eXekJVgS9WjggIhZRQbvNXlbFQDsc
+Sample URL: https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyBDX_eXekJVgS9WjggIhZRQbvNXlbFQDsc
+Link to documentation: https://developers.google.com/maps/documentation/geocoding/intro

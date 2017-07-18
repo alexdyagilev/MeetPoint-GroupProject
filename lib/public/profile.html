@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Start | MeetPoint</title>
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootswatch.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Google Map -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDX_eXekJVgS9WjggIhZRQbvNXlbFQDsc&libraries=places"></script>
+  <!-- Javascript -->
+  <script type="text/javascript" src="assets/javascript/logic.js"></script>
+</head>
+  <body>
+      <!--NAVBAR START-->
+    <nav class="navbar navbar-default" id="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MeetPoint<span><img src="assets/images/octopus512.png" alt="MeetPoint Logo"  style="width: 2vw;height: auto;"></span></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li class="dropdown">
+              <a href="#" id="nav-display-name" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Account Settings</a></li>
+                <!--
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                -->
+                <li role="separator" class="divider"></li>
+                <li><a href="#" id="btn-logout">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!--NAVBAR END-->
+    <!--<div class="container-fluid"> -->
+    <div class="row>">
+      <div class="col-md-4 boxes">
+        <div class="panel panel-warning">
+          <div class="panel-heading">
+            <h3 id="groups-heading" class="panel-title">Current Groups<span><button id="btn-group-modal">Create a Group</button></span></h3>
+          </div>
+          <div class="panel-body">
+            <ul id="div-group-list"></ul> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 boxes">
+          <div id="map" class="panel-body"></div>
+      </div>
+    </div>
+
+    <div id="modal-create-group" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button id="close-create-group" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Create Group</h4>
+          </div>
+          <div class="modal-body">
+            <fieldset>
+              Group Name: <input type="text" class="form-control" id="input-group-name" placeholder="Group name">
+              Meeting Purpose: <input type="text" class="form-control" id="input-group-purpose" placeholder="Purpose">
+              Looking for: <input type="text" class="form-control" id="input-group-place" placeholder="e.g. cafe, restaurant, bar, etc.">
+              <button id="btn-group-form" type="button" class="btn btn-warning start-btn modal-btn">Create Group</button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-start-location" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button id="close-start-location" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Where will you be coming from?</h4>
+          </div>
+          <div class="modal-body">
+            <fieldset>
+              Start location: <input type="text" class="form-control" id="input-start-location" placeholder="Address">
+              <button id="btn-start-location" type="button" class="btn btn-warning start-btn modal-btn">Submit</button>
+              <button id="btn-current-loc" type="button" class="btn btn-warning start-btn modal-btn">Use <br>Current Location</button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

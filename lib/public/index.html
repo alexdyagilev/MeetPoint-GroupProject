@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Start | MeetPoint</title>
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootswatch.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Google Map -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDX_eXekJVgS9WjggIhZRQbvNXlbFQDsc&libraries=places"></script>
+  <!-- Javascript -->
+  <script type="text/javascript" src="assets/javascript/logic.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div id="row-1" class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">MeetPoint<img src="assets/images/octopus512.png" alt="MeetPoint Logo"  style="width: 10vw;height: auto;"> </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <button id="btn-signup-modal" type="button" class="btn btn-warning start-btn">Sign Up</button>
+      <button id="btn-login-modal" type="button" class="btn btn-warning start-btn">Login</button>
+    </div>
+    <div class="col-md-4"></div>
+
+    <div id="modal-signup" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button id="close-signup" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Sign Up</h4>
+          </div>
+          <div class="modal-body">
+            <fieldset>
+              Display Name: <input type="text" class="form-control" id="input-name" placeholder="Name">
+              Email: <input type="email" class="form-control" id="input-email" placeholder="Email">
+              Password: <input type="password" class="form-control" id="input-pwd" placeholder="Password">
+              <button id="btn-signup-form" type="button" class="btn btn-warning start-btn modal-btn">Sign Up</button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-login" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button id="close-login" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Login</h4>
+          </div>
+          <div class="modal-body">
+            <fieldset>
+              Email: <input type="email" class="form-control" id="input-email-login" placeholder="Email">
+              Password: <input type="password" class="form-control" id="input-pwd-login" placeholder="Password">
+              <button id="btn-login-form" type="button" class="btn btn-warning start-btn modal-btn">Login</button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+</div>
+
+</body>
+</html>
